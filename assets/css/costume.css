@@ -1,0 +1,26 @@
+
+#intro .profile-img {
+    width: 150px; 
+    height: 150px;
+    border-radius: 50%; 
+    object-fit: cover; 
+    margin-bottom: 20px; 
+}
+
+#nav .icons li a {
+    margin-left: 5px; 
+}
+
+#nav .icons {
+    margin-left: 30px; 
+}
+
+.button-wrapper {
+    display: flex; /* Enables flexbox */
+    justify-content: center; /* Centers content horizontally */
+    margin-top: 10px; /* Optional: Adds space above the button */
+}
+
+.actions {
+    margin-bottom: 0px;
+}

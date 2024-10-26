@@ -1,16 +1,13 @@
 <!DOCTYPE HTML>
-<!--
-	Massively by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
 	<head>
 		<title>Gur Shalev Software Developer Portfolio</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/costume.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 	</head>
 	<body class="is-preload">
 
@@ -19,6 +16,7 @@
 
 				<!-- Intro -->
 					<div id="intro">
+						<img src="./images/profile.jpg" alt="Profile Picture" class="profile-img">
 						<h1>Gur Shalev</h1>
 						<p>Software Developer</p>
 						<ul class="actions">
@@ -36,6 +34,7 @@
 						<ul class="icons">
 							<li><a href="#" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
 							<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+							<li><a href="#" class="icon fa-solid fa-file-lines"><span class="label">CV</span></a></li>
 						</ul>
 					</nav>
 
@@ -126,31 +125,55 @@
 					</div>
 
 				<!-- Footer -->
-					<footer id="footer">
-						<section class="split contact">
-							<section>
-								<h3>Phone</h3>
-								<p><a href="#">+972 544288970</a></p>
-							</section>
-							<section>
-								<h3>Email</h3>
-								<p><a href="#">shalevgur1@gmail.com</a></p>
-							</section>
-							<section>
-								<h3>Social</h3>
-								<ul class="icons alt">
-									<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
-									<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
-									<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
-									<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+				<footer id="footer">
+					<section>
+						<form method="post" action="#">
+							<div class="fields">
+								<div class="field">
+									<label for="name">Name</label>
+									<input type="text" name="name" id="name" />
+								</div>
+								<div class="field">
+									<label for="email">Email</label>
+									<input type="text" name="email" id="email" />
+								</div>
+								<div class="field">
+									<label for="message">Message</label>
+									<textarea name="message" id="message" rows="3"></textarea>
+								</div>
+							</div>
+							<div class="button-wrapper">
+								<ul class="actions">
+									<li><input type="submit" value="Send Email" /></li>
 								</ul>
-							</section>
+							</div>
+						</form>
+					</section>
+					<section class="split contact">
+						<section>
+							<h3>Send me a job offer using one of the options below!</h3>
 						</section>
-					</footer>
+						<section>
+							<h3>Email</h3>
+							<p><a href="#">shalevgur1@gmail.com</a></p>
+						</section>
+						<section>
+							<h3>Phone</h3>
+							<p><a href="#">+972 54-4288970</a></p>
+						</section>
+						<section>
+							<h3>Social</h3>
+							<ul class="icons alt">
+								<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+								<li><a href="#" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
+							</ul>
+						</section>
+					</section>
+				</footer>
 
-				<!-- Copyright -->
+				<!-- Additional info -->
 					<div id="copyright">
-						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+						<ul><li>Offer me a Job!</li></ul>
 					</div>
 
 			</div>
