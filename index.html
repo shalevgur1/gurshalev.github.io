@@ -165,7 +165,7 @@
 				<!-- Footer -->
 				<footer id="footer">
 					<section>
-						<form method="post" action="https://formspree.io/f/myzykjoq">
+						<form id="contact-form">
 							<div class="fields">
 								<div class="field">
 									<label for="name">Name</label>
@@ -187,6 +187,8 @@
 							</div>
 						</form>
 					</section>
+
+					<!-- Contact Section -->
 					<section class="split contact">
 						<section>
 							<h3>Email</h3>
@@ -212,9 +214,9 @@
 				</footer>
 
 				<!-- Additional info -->
-					<div id="copyright">
-						<ul><li>Offer me a Job!</li></ul>
-					</div>
+				<div id="copyright">
+					<ul><li>Offer me a Job!</li></ul>
+				</div>
 
 			</div>
 
@@ -226,6 +228,47 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+
+		<!-- Init EmailJS -->
+			<script type="text/javascript"
+				src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+			</script>
+			<script type="text/javascript">
+				(function(){
+					emailjs.init({
+						publicKey: "X41JA5bj47b2_Rkq0",
+					});
+				})();
+			</script>
+		
+		<!-- EmailJS functionality -->
+			<script>
+				document.getElementById('contact-form').addEventListener('submit', function(event) {
+ 				
+				event.preventDefault();
+
+				// Collect form data
+				const params = {
+					name: document.getElementById('name').value,
+					email: document.getElementById('email').value,
+					message: document.getElementById('message').value,
+					reply_to: document.getElementById('email').value
+				};
+				
+				// Send form data email
+				emailjs.send('service_ljjfd4l', 'template_gq241rv', params)
+					.then(function(response) {
+						// Clear text inputs
+						document.getElementById('name').value = "";
+						document.getElementById('email').value = "";
+						document.getElementById('message').value = "";
+						document.getElementById('email').value = "";
+						alert('Email sent successfully!');
+					}, function(error) {
+						alert('Failed to send email. Please send the email manually.');
+					});
+				});
+			</script>
 
 	</body>
 </html>
